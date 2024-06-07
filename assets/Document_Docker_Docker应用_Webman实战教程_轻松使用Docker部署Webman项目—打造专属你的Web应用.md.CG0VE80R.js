@@ -1,0 +1,103 @@
+import{_ as n,c as s,o as a,a3 as e}from"./chunks/framework.zGi9i9Bf.js";const p="/ProgramLearnNotes/assets/9994894894.wac3PL5k.webp",k=JSON.parse('{"title":"Webman实战教程_轻松使用Docker部署Webman项目—打造专属你的Web应用","description":"","frontmatter":{},"headers":[],"relativePath":"Document/Docker/Docker应用/Webman实战教程_轻松使用Docker部署Webman项目—打造专属你的Web应用.md","filePath":"Document/Docker/Docker应用/Webman实战教程_轻松使用Docker部署Webman项目—打造专属你的Web应用.md","lastUpdated":1717759497000}'),l={name:"Document/Docker/Docker应用/Webman实战教程_轻松使用Docker部署Webman项目—打造专属你的Web应用.md"},r=e('<h1 id="webman实战教程-轻松使用docker部署webman项目—打造专属你的web应用" tabindex="-1">Webman实战教程_轻松使用Docker部署Webman项目—打造专属你的Web应用 <a class="header-anchor" href="#webman实战教程-轻松使用docker部署webman项目—打造专属你的web应用" aria-label="Permalink to &quot;Webman实战教程_轻松使用Docker部署Webman项目—打造专属你的Web应用&quot;">​</a></h1><h1 id="docker介绍" tabindex="-1">Docker介绍 <a class="header-anchor" href="#docker介绍" aria-label="Permalink to &quot;Docker介绍&quot;">​</a></h1><h2 id="简介" tabindex="-1">简介 <a class="header-anchor" href="#简介" aria-label="Permalink to &quot;简介&quot;">​</a></h2><p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p><h2 id="为什么使用docker" tabindex="-1">为什么使用Docker <a class="header-anchor" href="#为什么使用docker" aria-label="Permalink to &quot;为什么使用Docker&quot;">​</a></h2><ul><li>加速本地的开发和构建流程，容器可以在开发环境构建，然后轻松地提交到测试环境，并最终进入生产环境</li><li>能够在让独立的服务或应用程序在不同的环境中得到相同的运行结果</li><li>创建隔离的环境来进行测试</li><li>高性能、超大规划的宿主机部署</li><li>从头编译或者扩展现有的 OpenShift 或 Cloud Foundry 平台来搭建自己的 PaaS 环境</li></ul><h2 id="拉取镜像" tabindex="-1">拉取镜像 <a class="header-anchor" href="#拉取镜像" aria-label="Permalink to &quot;拉取镜像&quot;">​</a></h2><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>docker pull ghcr.io/tinywan/docker-php-webman:latest</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><blockquote><p>注：这里的容器仓库是使用的Github容器仓库，并不是Docker官方容器仓库。</p></blockquote><p>Github地址：<a href="https://github.com/Tinywan/docker-php-webman" target="_blank" rel="noreferrer">https://github.com/Tinywan/docker-php-webman</a></p><p>镜像仓库地址：<a href="https://github.com/Tinywan/docker-php-webman/pkgs/container/docker-php-webman" target="_blank" rel="noreferrer">https://github.com/Tinywan/docker-php-webman/pkgs/container/docker-php-webman</a></p><p><img src="'+p+`" alt="图片"></p><blockquote><p>以上镜像目前包含最稳定和最新版本的PHP版本。7.4.29、8.1.4、8.2.11</p></blockquote><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>$ docker pull ghcr.io/tinywan/docker-php-webman:latest</span></span>
+<span class="line"><span>latest: Pulling from tinywan/docker-php-webman</span></span>
+<span class="line"><span>96526aa774ef: Already exists</span></span>
+<span class="line"><span>c2b4f1479ad8: Already exists</span></span>
+<span class="line"><span>e266ff8d3cec: Already exists</span></span>
+<span class="line"><span>6127d1435a8c: Already exists</span></span>
+<span class="line"><span>3cd239193044: Pull complete</span></span>
+<span class="line"><span>e382ad9012a8: Pull complete</span></span>
+<span class="line"><span>802f60bdedcc: Pull complete</span></span>
+<span class="line"><span>f084c192031f: Pull complete</span></span>
+<span class="line"><span>d2fb0a128f05: Pull complete</span></span>
+<span class="line"><span>c86a0b84d7a5: Pull complete</span></span>
+<span class="line"><span>ed1bba0bf370: Pull complete</span></span>
+<span class="line"><span>4d93078aeacf: Downloading [=============================================&gt;     ]  132.1MB/145.4MB</span></span>
+<span class="line"><span>a740bafc45df: Download complete</span></span>
+<span class="line"><span>4f4fb700ef54: Download complete</span></span>
+<span class="line"><span>1ecbeeb60100: Download complete</span></span>
+<span class="line"><span>94da5ab8d25a: Download complete</span></span>
+<span class="line"><span>c97d1485a658: Download complete</span></span>
+<span class="line"><span>329e29eca3b3: Download complete</span></span>
+<span class="line"><span>dafdfe3e9e69: Download complete</span></span>
+<span class="line"><span>84fabf25dc21: Download complete</span></span>
+<span class="line"><span>e1fb87b1a159: Download complete</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><blockquote><p>通过<code>docker images</code> 查看拉取的镜像</p></blockquote><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>$ docker images</span></span>
+<span class="line"><span>REPOSITORY                          TAG               IMAGE ID       CREATED         SIZE</span></span>
+<span class="line"><span>ghcr.io/tinywan/docker-php-webman   8.2.11            4d4c977b1bd2   4 days ago      519MB</span></span>
+<span class="line"><span>ghcr.io/tinywan/docker-php-webman   latest            4d4c977b1bd2   4 days ago      519MB</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><blockquote></blockquote><p>默认<code>tinywan/docker-php-webman</code>拉取的镜像容器是最新的。拉取特定的可以执行拉取容器的版本，如：<code>tinywan/docker-php-webman:7.4.29</code></p><h1 id="开始部署" tabindex="-1">开始部署 <a class="header-anchor" href="#开始部署" aria-label="Permalink to &quot;开始部署&quot;">​</a></h1><h3 id="linux" tabindex="-1">Linux <a class="header-anchor" href="#linux" aria-label="Permalink to &quot;Linux&quot;">​</a></h3><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>docker run --rm -it -p 8787:8787 -v /home/www/webman:/app tinywan/docker-php-webman</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><h3 id="windows" tabindex="-1">Windows <a class="header-anchor" href="#windows" aria-label="Permalink to &quot;Windows&quot;">​</a></h3><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>docker run --rm -it -p 8787:8787 -v e:/dnmp/www/webman:/app tinywan/docker-php-webman</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><blockquote><p><code>8787:8787</code> 是容器开放和对外绑定的端口号。<code>e:/dnmp/www/webman:/app</code> 则是本地挂载的目录，上面表示Window环境下载 <code>E</code>盘，webman项目目录为 <code>/dnmp/www/webman</code>的挂载到容器的 <code>app</code>上。</p></blockquote><p>这里使用Windows环境进行部署</p><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>docker run --rm -it -p 8787:8787 -v e:/dnmp/www/webman:/app ghcr.io/tinywan/docker-php-webman:8.2.11</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br></div></div><blockquote><p>第一次启动可能会报错，原因就是和本地的端口冲突了，会提示以下错误信息。</p></blockquote><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>$ docker run --rm -it -p 8787:8787 -v e:/dnmp/www/webman:/app ghcr.io/tinywan/docker-php-webman:8.2.11</span></span>
+<span class="line"><span>docker: Error response from daemon: driver failed programming external connectivity on endpoint serene_kapitsa (4c56469d97d3112e3410df4c62776de77471b654bba339675ffb89d5a2196f91): Bind for 0.0.0.0:8787 failed: port is already allocated.</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><blockquote><p>以上错误信息只需要给本主机重新换一个端口号就行了。这里重新换成<code>8999</code></p></blockquote><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>$ docker run --rm -it -p 8999:8787 -v e:/dnmp/www/webman:/app ghcr.io/tinywan/docker-php-webman:8.2.11</span></span>
+<span class="line"><span>2023-10-16 01:33:35,525 INFO Set uid to user 0 succeeded</span></span>
+<span class="line"><span>2023-10-16 01:33:35,529 INFO supervisord started with pid 1</span></span>
+<span class="line"><span>2023-10-16 01:33:36,534 INFO spawned: &#39;webman&#39; with pid 7</span></span>
+<span class="line"><span>Workerman[/app/start.php] start in DEBUG mode</span></span>
+<span class="line"><span>------------------------------------------- WORKERMAN --------------------------------------------</span></span>
+<span class="line"><span>Workerman version:4.1.13          PHP version:8.2.11           Event-Loop:\\Workerman\\Events\\Event</span></span>
+<span class="line"><span>-------------------------------------------- WORKERS ---------------------------------------------</span></span>
+<span class="line"><span>proto   user            worker          listen                 processes    status</span></span>
+<span class="line"><span>tcp     root            webman          http://0.0.0.0:8787    24            [OK]</span></span>
+<span class="line"><span>tcp     root            monitor         none                   1             [OK]</span></span>
+<span class="line"><span>--------------------------------------------------------------------------------------------------</span></span>
+<span class="line"><span>Press Ctrl+C to stop. Start success.</span></span>
+<span class="line"><span>2023-10-16 01:33:38,305 INFO success: webman entered RUNNING state, process has stayed up for &gt; than 1 seconds (startsecs)</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>可以看到已经正常启动了，通过映射端口号<code>8999</code>地址 <code>http://127.0.0.1:8999/</code>就可以访问webman了</p><h1 id="容器介绍" tabindex="-1">容器介绍 <a class="header-anchor" href="#容器介绍" aria-label="Permalink to &quot;容器介绍&quot;">​</a></h1><p>想知道容器，的进入到容器里面。这里通过容器ID进入</p><p>查看容器</p><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>$ docker ps -a</span></span>
+<span class="line"><span>CONTAINER ID   IMAGE                                      COMMAND                  CREATED         STATUS          PORTS</span></span>
+<span class="line"><span>                                                                               NAMES</span></span>
+<span class="line"><span>b301d123ebd2   ghcr.io/tinywan/docker-php-webman:8.2.11   &quot;docker-php-entrypoi…&quot;   6 minutes ago   Up 6 minutes    0.0.0.0:8999-&gt;8787/tcp</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>进入容器</p><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>$ docker exec -it b301d123ebd2 bash</span></span>
+<span class="line"><span>b301d123ebd2:/app#</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>查看PHP版本</p><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>b301d123ebd2:/app# php -v</span></span>
+<span class="line"><span>PHP 8.2.11 (cli) (built: Sep 30 2023 02:47:14) (NTS)</span></span>
+<span class="line"><span>Copyright (c) The PHP Group</span></span>
+<span class="line"><span>Zend Engine v4.2.11, Copyright (c) Zend Technologies</span></span>
+<span class="line"><span>    with Zend OPcache v8.2.11, Copyright (c), by Zend Technologies</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>查看PHP安装扩展</p><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>b301d123ebd2:/app# php -m</span></span>
+<span class="line"><span>[PHP Modules]</span></span>
+<span class="line"><span>bcmath</span></span>
+<span class="line"><span>bz2</span></span>
+<span class="line"><span>calendar</span></span>
+<span class="line"><span>Core</span></span>
+<span class="line"><span>ctype</span></span>
+<span class="line"><span>curl</span></span>
+<span class="line"><span>date</span></span>
+<span class="line"><span>dom</span></span>
+<span class="line"><span>event</span></span>
+<span class="line"><span>fileinfo</span></span>
+<span class="line"><span>filter</span></span>
+<span class="line"><span>ftp</span></span>
+<span class="line"><span>hash</span></span>
+<span class="line"><span>iconv</span></span>
+<span class="line"><span>json</span></span>
+<span class="line"><span>libxml</span></span>
+<span class="line"><span>mbstring</span></span>
+<span class="line"><span>mysqli</span></span>
+<span class="line"><span>mysqlnd</span></span>
+<span class="line"><span>openssl</span></span>
+<span class="line"><span>pcntl</span></span>
+<span class="line"><span>pcre</span></span>
+<span class="line"><span>PDO</span></span>
+<span class="line"><span>pdo_mysql</span></span>
+<span class="line"><span>pdo_sqlite</span></span>
+<span class="line"><span>Phar</span></span>
+<span class="line"><span>posix</span></span>
+<span class="line"><span>random</span></span>
+<span class="line"><span>readline</span></span>
+<span class="line"><span>Reflection</span></span>
+<span class="line"><span>session</span></span>
+<span class="line"><span>SimpleXML</span></span>
+<span class="line"><span>soap</span></span>
+<span class="line"><span>sockets</span></span>
+<span class="line"><span>sodium</span></span>
+<span class="line"><span>SPL</span></span>
+<span class="line"><span>sqlite3</span></span>
+<span class="line"><span>standard</span></span>
+<span class="line"><span>tokenizer</span></span>
+<span class="line"><span>xml</span></span>
+<span class="line"><span>xmlreader</span></span>
+<span class="line"><span>xmlwriter</span></span>
+<span class="line"><span>Zend OPcache</span></span>
+<span class="line"><span>zip</span></span>
+<span class="line"><span>zlib</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>[Zend Modules]</span></span>
+<span class="line"><span>Zend OPcache</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br></div></div><h1 id="其他" tabindex="-1">其他 <a class="header-anchor" href="#其他" aria-label="Permalink to &quot;其他&quot;">​</a></h1><blockquote><p>如果出现一下情况，则需要登录github</p></blockquote><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>$ docker pull ghcr.io/tinywan/docker-php-webman:latest</span></span>
+<span class="line"><span>Error response from daemon: Head &quot;https://ghcr.io/v2/tinywan/docker-php-webman/manifests/latest&quot;: denied: denied</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>则需要登录</p><div class="language- line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki one-dark-pro vp-code" tabindex="0"><code><span class="line"><span>// 这里是Github生成的个人令牌</span></span>
+<span class="line"><span>$ export CR_PAT=ghp_bF2wQ72fb2ym5AEZaU3sdfsdfERRihcJ</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 登录Github</span></span>
+<span class="line"><span>$ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin</span></span>
+<span class="line"><span>Login Succeeded</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div>`,46),c=[r];function i(o,b,d,t,u,m){return a(),s("div",null,c)}const w=n(l,[["render",i]]);export{k as __pageData,w as default};
