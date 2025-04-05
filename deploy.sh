@@ -19,9 +19,9 @@ git add -A
 git commit -m "GitHub Action 自动部署：$time"
 
 # # 如果发布到 https://<USERNAME>.github.io   -f 强制推送
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-git push -f git@gitee.com:muyaCode/program-learn-notes.git master:gh-pages # 发布到Gitee
-# git push -f git@github.com:muyaCode/program-learn-notes.git master:gh-pages # 发布到GitHub
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
+git push -f git@gitee.com:muyaCode/program-learn-notes.git main:gh-pages # 发布到Gitee
+# git push -f git@github.com:muyaCode/program-learn-notes.git main:gh-pages # 发布到GitHub
 
 # 退出到本项目根目录
 cd -
