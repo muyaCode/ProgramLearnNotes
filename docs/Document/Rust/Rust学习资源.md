@@ -606,6 +606,257 @@ github主页  https://github.com/theembeddedrustacean/ser-std
 
 嵌入式 Rust 主页 https://www.theembeddedrustacean.com/
 
+# 学习资源
+
+- [前言 - Rust高性能编程指南：https://colobu.com/perf-book/)
+- [Rust原子操作和锁——colobu.com/atomics/：https://colobu.com/atomics/)
+- [高效Rust编程——封面 - Effective Rust 中文版](https://colobu.com/effective-rust/)
+- [Rust 程序设计语言 - Rust 程序设计语言 中文版：https://colobu.com/thebook/)
+- [介绍 - Rust 秘典（死灵书）：https://colobu.com/nomicon/)
+- [简介 - Rust 参考手册 中文版：https://colobu.com/rust-reference/)
+- [简介 - The Little Book of Rust Macros （Rust 宏小册）：https://colobu.com/tlborm/)
+- Rust异步编程书
+- [简介 - 通过例子学 Rust 中文版：https://colobu.com/rust-by-example/)
+- [关于本书 - Rust API Guidelines（Rust API 编写指南）：https://colobu.com/api-guidelines/)
+- [全面Rust课程：Welcome to Comprehensive Rust 🦀 - Comprehensive Rust 🦀：https://colobu.com/comprehensive-rust/)
+- [更新 - 简单英语学Rust：https://colobu.com/easy-rust/)
+- [引言 - Rust设计模式：https://colobu.com/rust-patterns/)
+- [Rust半小时教程：https://colobu.com/2020/03/05/A-half-hour-to-learn-Rust/)
+- [Rust实用指南(cookbook)中文版 - A Rust Cookbook：https://colobu.com/rust-cookbook/)
+- [简介 - The Rust Rand Book（中文版）：https://colobu.com/rust-rand/)
+- [Contents - Rust for the Polyglot Programmer：https://www.chiark.greenend.org.uk/~ianmdlvl/rust-polyglot/index.html)
+- [Introduction - LifetimeKata：https://tfpk.github.io/lifetimekata/)
+- [MacroKata：https://tfpk.github.io/macrokata/#macrokata)
+
+# 用RUST进行系统编程的自学资源
+
+https://github.com/rcore-os/rCore/wiki/study-resource-of-system-programming-in-RUST
+
+
+
+#### 7~21天内高效学习 Rust 建议：
+
+
+
+前提条件： 要求有基本数据结构，算法基础，相对了解或熟悉C/C++/Java等编程.
+
+##### 学习方案零
+
+
+
+1. 通过阅读并练习 [Rust 教程 | 菜鸟教程](https://doc.rust-lang.org/rust-by-example/)) 等，全面梳理一遍 Rust 语法。期间可参考书目：（[《 Rust by Example 》](https://doc.rust-lang.org/rust-by-example/)) 等）。（1~6天）
+2. 尝试完成编程小练习[Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)和中等规模练习，在实践中反复学习。（3~9天）
+
+##### 学习方案一
+
+
+
+1. 通过阅读并练习[带在线练习的The Rust Programming Language书籍（Rust社区认可教程）](https://rust-book.cs.brown.edu/)来学校Rust编程。有[Rust 程序设计语言中文版书籍（Rust社区认可教程）](https://kaisery.github.io/trpl-zh-cn/)（1~6天）
+2. 通过阅读并练习 [《 Rust by Example 》](https://doc.rust-lang.org/rust-by-example/)) 等，全面梳理一遍 Rust 语法。期间可参考书目：（《Programming Rust》、《Rust权威指南》（即官方 Rust Book 中译本）、《Rust编程之道》第二章 、《深入浅出 Rust》等）。（1~6天）
+3. 尝试完成编程小练习[Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)和中等规模练习，在实践中反复学习。（3~9天）
+
+##### 学习方案二
+
+
+
+1. 阅读并学习[Rust语言圣经(Rust教程 Rust Course)](https://course.rs/)（1~6天）
+2. 完成配套练习[Rust语言圣经配套练习](https://practice.rs/) （1~6天）
+3. 完成编程小练习[Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)和中等规模练习，在实践中反复学习。（3~9天）
+
+##### 学习方案三
+
+
+
+1. 阅读并学习[easy rust 中文版](https://kumakichi.github.io/easy_rust_chs/)，观看配套视频 [easy rust 中文字幕教学视频](https://www.youtube.com/playlist?list=PLfllocyHVgsRwLkTAhG0E-2QxCf-ozBkk) （1~6天）
+2. 完成编程小练习 [Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)（1~6 天）
+
+##### 学习方案四
+
+
+
+1. 跟着 [清华计算机系大一学生2022暑期课程：Rust程序设计训练](https://lab.cs.tsinghua.edu.cn/rust/) （有课程视频回放）进行学习 （3~10天）
+2. 完成编程小练习 [Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)（1~6 天）
+
+##### 学习方案五
+
+
+
+1. 如有较好编程基础，观看学习Rust语言编程教学视频[张汉东的Rust实战课](https://time.geekbang.org/course/intro/100060601) （1~14天）
+2. 阅读并学习 张汉东老师《Rust 编程之道》书籍） （1~14天）
+3. 完成编程小练习 [Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings) 和中等规模练习。（3~9 天）
+
+##### 学习方案六
+
+
+
+1. 如有较好编程基础，观看学习Rust语言编程教学视频[陈天 · Rust 编程第一课](https://time.geekbang.org/column/intro/100085301)（1~14天）
+2. 尝试完成编程小练习[Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings)和中等规模练习，在实践中反复学习。（3~9天）
+
+#### 自学材料和练习要求:
+
+
+
+1. 自学：阅读书籍
+
+1.1 编程学习类书籍/文档
+
+- [Rust-Lang社区中的文档中文翻译资源](https://github.com/rust-lang-cn)
+
+- [在 Y 分钟内学习 Rust X](https://learnxinyminutes.com/docs/rust/)
+
+- [Rust 程序设计语言 简体中文版](https://kaisery.github.io/trpl-zh-cn/)
+
+- [通过例子学 Rust](https://rust-by-example.budshome.com/)
+
+- RUST编程之道
+
+  - [《Rust编程之道》随书源码](https://ruststudy.github.io/tao_of_rust_docs/tao_of_rust/)
+
+- [深入浅出Rust](https://item.jd.com/12429296.html)
+
+- 简易 Rust：简单教科书
+
+  - [简易 Rust 中文版](https://kumakichi.github.io/easy_rust_chs/)
+  - [easy rust 中文字幕教学视频](https://www.youtube.com/playlist?list=PLfllocyHVgsRwLkTAhG0E-2QxCf-ozBkk)
+
+- [Rust 的绅士(温柔)介绍](http://llever.com/gentle-intro/1-basics.zh.html)
+
+- Rust 烹饪秘籍 中文版
+
+  - [Rust 菜谱-英文](https://rust-lang-nursery.github.io/rust-cookbook/intro.html)
+
+- Programming Rust
+
+   
+
+  在讲解中与python, C/C++等进行了对比，对理解Rust的ownership,生命周期等有帮助
+
+  - [中文版：Rust程序设计](https://www.ituring.com.cn/book/2101)
+
+- [将 C/C++移植到 Rust 指南](https://locka99.gitbooks.io/a-guide-to-porting-c-to-rust/content/)
+
+- [Rust 设计模式](https://rust-unofficial.github.io/patterns/)
+
+- 困难：Rustonomicon
+
+  - [难: The Rustonomicon 中文版：Rust 高级编程](https://learnku.com/docs/nomicon/2018)
+
+- [Rust相关书籍信息大全](https://github.com/sger/RustBooks)
+
+- 难：用过多的链表学习 Rust
+
+  - [《用过多的链表学习 Rust》的学习源码](https://github.com/anonymousGiga/Rust-link-list)
+  - [视频地址](https://www.bilibili.com/video/BV1eb4y1Q7FA)
+
+- [在 Rust 中无法做到的事情（以及如何替代）](https://blog.logrocket.com/what-you-cant-do-in-rust-and-what-to-do-instead/)
+
+- [24 天从 node.js 过渡到 Rust](https://vino.dev/blog/node-to-rust-day-1-rustup/)
+
+- Rust语言圣经(Rust教程 Rust Course)
+
+  - [Rust语言圣经配套练习](https://practice.rs/)
+
+- 命令行 Rust
+
+  - [书籍源码 source code](https://github.com/kyclark/command-line-rust)
+
+- [Rust 专业人士指南](https://overexact.com/rust-for-professionals/)
+
+- [Rust 系统编程](https://github.com/nrc/r4cppp)
+
+- [《Rust 编写操作系统（第一版）》](https://os.phil-opp.com/edition-1)
+
+1.2 参考和汇总类
+
+- [Rust Design Patterns](https://rust-unofficial.github.io/patterns/) ：各种常用编程模式的代码片段
+
+- [cargo book 中文](http://llever.com/cargo-book-zh/) ：各种小应用（与系统类访问相关）的参考实现
+
+- Rust Reference中文版
+
+  ：Rust的语言描述
+
+  - [Rust 参考手册-eng](https://doc.rust-lang.org/stable/reference/)
+
+- [Rust 语言速查表 ](https://cheats.rs/)：Rust 语言特性的快速查找
+
+- [Rust Compiler Error Index](https://doc.rust-lang.org/error-index.html)：rustc编译错误的详细描述和修改提示
+
+- [Rust Learning 各种信息汇总](https://github.com/ctjhoa/rust-learning)：相关学习资料汇总（英文）
+
+- [Rust学习资源](https://zhuanlan.zhihu.com/p/273653469)：相关学习资料汇总（中文）
+
+- [Rust 语言术语中英文对照表](https://github.com/rust-lang-cn/english-chinese-glossary-of-rust/blob/master/rust-glossary.md)
+
+- [awesome-rust：关于在 rustcc 中精选的 Rust 代码和资源列表。](https://github.com/rustcc/awesome-rust)
+
+- [Rust 官方非官方的 Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
+
+- [RustWHY Rust十万个为什么](https://fengliang.io/RustWHY/face.html)
+
+1. 自学：在线课程/教程
+
+2.1 初级：学习Rust语言
+
+- [清华计算机系大一学生2022暑期课程：Rust程序设计训练](https://lab.cs.tsinghua.edu.cn/rust/)
+- [中文：Rust编程视频教程（基础）--令狐壹冲](https://www.bilibili.com/video/BV1xJ411B79h?from=search&seid=11418904650629340673)
+- [中文：Rust编程视频教程（进阶）--令狐壹冲](https://www.bilibili.com/video/BV1FJ411Y71o?from=search&seid=11418904650629340673)
+- [Rust 之旅](https://tourofrust.com/)
+- [英文：CIS 198：Rust 编程：宾夕法尼亚大学：2016](http://cis198-2016s.github.io/schedule/)
+- 英文：CS 110L：系统编程中的安全性：春季 2020
+  - [bilibili 镜像+中文字幕：CS 110L：系统编程中的安全性：春季 2020](https://www.bilibili.com/video/BV1Ra411A7kN?from=search&seid=6146651326062502685)
+
+2.2 中级：如何用Rust写系统程序
+
+- [中文课程和作业笔记](https://pxiaoer.blog/category/rust/cs110l/)
+- [相关信息收集in github](https://github.com/xxg1413/CS110L)
+
+1. 自学：编程练习
+
+3.1 初级编程：小练习题
+
+- [小练习，帮助你熟悉阅读和编写 Rust 代码！](https://github.com/rust-lang/rustlings)
+  - 要求：小练习全部通过。代码和README提交在自己在github的公开repo上。
+- [32 个 Rust 练习题](https://dtolnay.github.io/rust-quiz/1)
+  - 要求：小练习全部通过。
+- [Rust语言学习笔记和小练习](https://github.com/lesterli/rust-practice)
+- [exercisms.io 快速练习(88+道题目的中文详细描述)](http://llever.com/exercism-rust-zh/index.html)
+  - 要求：大部分练习会做或能读懂。
+  - [exercism.io官方站点](https://exercism.io/)
+
+3.2 中级编程：100行左右的中小练习题
+
+基于笨办法学C/python/ruby的书籍和例子，要求用rust语言重新实现15道以上的编程练习题
+
+- 参考
+
+  Learn C The Hard Way 中文版
+
+  - [C语言练习题实现](https://github.com/zedshaw/learn-c-the-hard-way-lectures)
+
+- 参考 Learn Python 3 The Hard Way 视频教程
+
+  - [LP3THW英文版和code](https://github.com/cnR1ce/Learn-Python-3-the-Hard-Way)
+  - [python3语言练习题实现](https://github.com/zedshaw/learn-python3-thw-code)
+
+- 参考
+
+  Learn Ruby The Hard Way 中文版
+
+  - [ruby语言练习题实现](https://github.com/lancelakey/lrthw)
+
+- (进阶，可选）[Algorithm in Rust](https://github.com/TianyiShi2001/Algorithms): 基于Rust语言的经典算法，看看自己能否做出来
+
+- 要求：用rust语言编写完成某本“笨办法学（选择一种你熟悉的编程语言）”书中描述的题目中的15道以上的题目。代码和README提交在自己在github的公开repo上。
+
+- 如果不选择“笨办法系列”，可以选择类似Leecode的题目，用Rust实现，但需要在README中给出题目的出处和相关描述信息，并给出采用Rust语言和非Rust语言的实现代码。
+
+3.3 中高级编程：能阅读和编写上百行的程序
+
+- 基本掌握RUST编程，能理解下面的rCore tutorial中的文档和代码。
+- (进阶，可选）BOOK:Rust in Action: 基于Rust语言的中小软件项目，看看自己能否做出来
+  - [《Rust in Action》源代码](https://github.com/rust-in-action/code)
+
 # Rust学习工具
 
 ## Aquascope：可视化揭秘 Rust 程序的编译与运行时

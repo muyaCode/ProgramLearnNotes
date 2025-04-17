@@ -567,6 +567,79 @@ Go语言官方文档和标准库是学习Go的最佳资源。通过阅读官方�
 
 [18] Reddit r/golang: *https://www.reddit.com/r/golang/*
 
+# Go学习资源
+
+## Go汇编示例
+
+### [Go Assembly 示例](https://colobu.com/goasm/)
+
+[Go](http://golang.org/) 是一个开源的编程语言，用来构建简单、快速、可信赖的软件。
+
+*Go Assembly 示例* 手把手的通过示例介绍Go汇编功能。 查看[第一个例子](https://colobu.com/goasm/add.html) 或者查看下面的所有列表。
+
+除了翻译自lyon01_david的[示例](https://www.davidwong.fr/goasm/)外，我也会增加一些Go汇编的示例，比如获取goroutine 的ID等。
+
+相关的ASM文档：
+
+- [A Quick Guide to Go's Assembler](https://golang.org/doc/asm)
+- [A Foray Into Go Assembly Programming](https://blog.sgmansfield.com/2017/04/a-foray-into-go-assembly-programming/)
+- [Go汇编语言补充参考](http://quasilyte.dev/blog/post/go-asm-complementary-reference/)
+- [Go高级编程-汇编语言](https://chai2010.cn/advanced-go-programming-book/ch3-asm/readme.html)
+
+
+
+- [Add](https://colobu.com/goasm/add.html)
+- [Hello](https://colobu.com/goasm/hello.html)
+- [Arcsin](https://colobu.com/goasm/arcsin.html)
+- [Sync Atomic](https://colobu.com/goasm/sync-atomic.html)
+- [AES](https://colobu.com/goasm/aes.html)
+- [Sqrt](https://colobu.com/goasm/sqrt.html)
+- [goroutineid](https://colobu.com/goasm/goroutineid.html)
+- [noescape](https://colobu.com/goasm/noescape.html)
+
+by [@lyon01_david](https://www.davidwong.fr/goasm/) | based on [Go by Example](https://gobyexample.com/) by [@mmcgrana](https://twitter.com/mmcgrana)
+翻译 by [smallnest](http://colobu.com/)
+
+## Go Web开发示例
+
+Go Web 示例 - 通过 Examples 在 Go 中学习 Web 编程：https://gowebexamples.com/
+
+## Go 数据库开发教程
+
+Go database/sql 教程：http://go-database-sql.org/
+
+## Go 语言编程技巧
+
+https://github.com/smallnest/gotips
+
+
+
+这是 [Phuong Le](https://twitter.com/func25) 在X上发布的一系列的技巧。 Phuong Le也将推文整理成到了一个github仓库中[go-practical-tips](https://github.com/func25/go-practical-tips)
+
+征得作者同意，翻译成了中文。
+
+本书是基于Phuong Le的推文进行翻译的，同时也新建一个说明，按照作者github项目上的划分整理各个tip。
+
+感谢以下网友共同进行了翻译，翻译进展迅速。
+
+正如作者所说，有些tip可能有一些错误：
+
+> Some of the tips were awkward, with typos and naive explanations.
+
+我们翻译的时候也发现了作者的一些手误，或者错误，及时做了注解和纠正。难免还有一些问题，欢迎大家到github提issue或者提Pull request.
+
+翻译网站：[gotips](https://github.com/smallnest/gotips)。
+
+
+
+## RPCX官网
+
+RPCX：https://rpcx.io/
+
+## RPC开发指南
+
+Introduction · Go RPC编程指南：https://cn.doc.rpcx.io/
+
 # Go与Rust：未来的软件开发大比拼
 
 Go语言和Rust语言作为现代编程语言，在软件开发领域有着广泛的应用和不小的影响力。它们各自的特点、优势和适用场景各异，也各自拥有一批忠实的拥护者。本文将详细探讨这两种语言的设计哲学、性能特点、使用场景以及未来发展趋势。
